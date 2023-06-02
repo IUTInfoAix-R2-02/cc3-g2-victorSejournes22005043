@@ -7,7 +7,7 @@
 <?import javafx.scene.text.*?>
 
 <HBox id="scene" prefHeight="499.0" prefWidth="771.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #96def2;">
-    <Pane prefHeight="400.0" prefWidth="400.0" translateY="20">
+    <Pane fx:id="pain" prefHeight="400.0" prefWidth="400.0" translateY="20">
         <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile" />
         <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile" />
         <Circle centerX="200.0" centerY="200.0" radius="100.0" styleClass="toile" />
@@ -42,14 +42,14 @@
          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
      </rowConstraints>
       <children>
-         <TextField GridPane.columnIndex="1" />
-         <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-         <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-         <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-         <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
-         <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
-         <Button mnemonicParsing="false" text="Vider" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-         <Button mnemonicParsing="false" text="Tracer" GridPane.rowIndex="6" />
+         <TextField fx:id="comp1" GridPane.columnIndex="1" />
+         <TextField fx:id="comp2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <TextField fx:id="comp3" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <TextField fx:id="comp4" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         <TextField fx:id="comp5" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         <TextField fx:id="comp6" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         <Button fx:id="vider" mnemonicParsing="false" text="Vider" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         <Button fx:id="tracer" mnemonicParsing="false" text="Tracer" GridPane.rowIndex="6" />
          <Label text="Compétence 1 - Réaliser" />
          <Label text="Compétence 2 - Optimiser" GridPane.rowIndex="1" />
          <Label text="Compétence 3 - Administrer" GridPane.rowIndex="2" />
